@@ -1,0 +1,53 @@
+{
+  "name": "graphql-course-qa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --watch 'server.ts' --exec 'ts-node' server.ts"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "@types/mongodb": "^3.1.19",
+    "@types/react": "^16.7.18",
+    "apollo-boost": "^0.1.27",
+    "graphql-tools": "^4.0.4",
+    "graphql-yoga": "^1.17.1",
+    "mongo-in-memory": "^0.0.5",
+    "mongodb": "^3.1.13",
+    "next": "^7.0.2",
+    "react": "^16.8.0-alpha.0",
+    "react-apollo": "^2.4.1",
+    "react-dom": "^16.8.0-alpha.0",
+    "stellar-sdk": "^0.11.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "@types/next": "^7.0.6",
+    "@types/node": "^10.12.18",
+    "@types/stellar-sdk": "^0.11.0",
+    "@zeit/next-typescript": "^1.1.1",
+    "jest": "23.0.1",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.1"
+  }
+}
